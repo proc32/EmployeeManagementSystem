@@ -1,0 +1,5 @@
+language = "java"
+
+[run]
+# Compile and run your Java app
+command = "mvn clean package && java -cp target/employee-management-system-1.0-SNAPSHOT.jar java.EmployeeManagementSystem"
