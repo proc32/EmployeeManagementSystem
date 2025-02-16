@@ -1,10 +1,8 @@
+# render.yaml
 services:
   - type: web
     name: employee-management-system
     runtime: java
-    buildCommand: mvn clean install -DskipTests
+    buildCommand: mvn clean package
     startCommand: java -jar target/employee-management-system-1.0-SNAPSHOT.jar
-    envVars:
-      - key: JAVA_VERSION
-        value: 17
-    plan: free
+    env: java
